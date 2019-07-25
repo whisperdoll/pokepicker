@@ -1,0 +1,348 @@
+body, html, #container {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav {
+  width: 100%;
+  height: 96px;
+  background: #111;
+  box-sizing: border-box;
+  padding: 0 32px;
+  color: #eee;
+}
+#nav #title {
+  float: left;
+  height: 96px;
+  line-height: 96px;
+  font-size: 32px;
+}
+#nav #nav-btns {
+  float: right;
+  height: 96px;
+  line-height: 96px;
+  font-size: 18px;
+}
+#nav #nav-btns div {
+  float: left;
+  margin: 0 0px;
+  padding: 0 12px;
+  cursor: pointer;
+  box-sizing: border-box;
+  height: 100%;
+}
+#nav #nav-btns div:hover, #nav #nav-btns div.selected {
+  border-bottom: 2px solid yellow;
+  color: yellow;
+}
+
+#main {
+  height: calc(100% - 96px - 64px);
+  width: 100%;
+  background: #eee;
+  color: #111;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  overflow: auto;
+  text-align: center;
+  padding-bottom: 64px;
+}
+
+#welcome {
+  height: calc(100% - 96px);
+  width: 100%;
+  background: #eee;
+  color: #111;
+  box-sizing: border-box;
+  padding: 64px 0px;
+  overflow: auto;
+  font-size: 64px;
+  text-align: center;
+}
+#welcome div {
+  width: 50%;
+  display: inline-block;
+}
+
+#bottom {
+  position: relative;
+  width: 100%;
+  height: 64px;
+  background: #111;
+  box-sizing: border-box;
+  padding: 0;
+  color: #eee;
+  text-align: center;
+}
+#bottom #filter, #bottom #unfilter {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#bottom #filter:hover, #bottom #unfilter:hover {
+  color: #ddd;
+}
+#bottom div {
+  height: 64px;
+  line-height: 64px;
+  display: inline-block;
+  font-size: 20px;
+}
+#bottom #next, #bottom #back {
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 32px;
+}
+#bottom #next:hover, #bottom #back:hover {
+  background: #333;
+}
+#bottom #back {
+  position: absolute;
+  left: 0;
+}
+#bottom #next {
+  position: absolute;
+  right: 0;
+}
+
+.pokeButton {
+  border: 1px solid #aaa;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  margin: 8px;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+}
+.pokeButton.selected {
+  background-color: #FFFFAA;
+}
+.pokeButton.selected:hover {
+  background-color: #FFFFCC;
+}
+.pokeButton img {
+  pointer-events: none;
+  object-fit: contain;
+}
+.pokeButton div {
+  color: #333;
+}
+.pokeButton:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+#results {
+  height: calc(100% - 96px);
+  width: 100%;
+  background: #eee;
+  color: #111;
+  box-sizing: border-box;
+  padding: 32px 32px;
+  overflow: auto;
+  text-align: center;
+}
+#results > div {
+  text-align: center;
+  border: 4px solid #444;
+  border-radius: 5px;
+  padding: 24px 32px;
+  background-color: #ddd;
+  max-width: 100%;
+  display: inline-block;
+  min-width: 50%;
+}
+#results > div#share {
+  display: block;
+}
+#results > div .title {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+#results > div .section {
+  display: inline-block;
+  padding: 8px 8px;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+#results > div .section .pokeButton {
+  margin: 4px;
+  border: 0;
+  padding: 0;
+  cursor: default;
+}
+#results > div .section .pokeButton:hover {
+  background: transparent;
+}
+#results > div .section .pokeButton.selected {
+  background: transparent;
+}
+#results > div .section:last-of-type {
+  margin-bottom: 0;
+}
+#results > div#share {
+  margin-top: 8px;
+}
+#results > div#share .title {
+  font-size: 32px;
+}
+#results > div#share .row {
+  margin: 8px 0;
+}
+#results > div#share .row span {
+  font-size: 24px;
+  margin-right: 1em;
+}
+#results > div#share .row input {
+  font-size: 24px;
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+}
+
+@media (max-width: 800px) {
+  #nav {
+    height: 144px;
+  }
+  #nav #title, #nav #nav-btns {
+    width: 100%;
+    height: 72px;
+    line-height: 72px;
+    display: block;
+    text-align: center;
+  }
+  #nav #title div, #nav #nav-btns div {
+    float: none;
+    display: inline-block;
+  }
+
+  #main > #zoom-container {
+    bottom: 112px;
+  }
+
+  #bottom {
+    height: 96px;
+  }
+  #bottom div {
+    display: block;
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+  }
+  #bottom #next, #bottom #back {
+    display: inline-block;
+    width: auto;
+    bottom: 0;
+  }
+
+  #welcome {
+    height: calc(100% - 144px);
+  }
+
+  #main {
+    height: calc(100% - 144px - 96px);
+  }
+}
+#zoom-container {
+  position: fixed;
+  right: 32px;
+  bottom: 80px;
+  width: 20%;
+  min-width: 150px;
+  background: #444;
+  border-radius: 60px;
+  height: 32px;
+  border: 4px solid #888;
+  opacity: 0.8;
+}
+#zoom-container:hover {
+  opacity: 1;
+}
+
+.labelSlider {
+  position: relative;
+}
+.labelSlider .labelSlider-label {
+  width: 100%;
+  height: 100%;
+  line-height: 32px;
+  color: #ddd;
+  font-size: 20px;
+}
+.labelSlider .labelSlider-slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 32px;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  background: transparent;
+  margin: 0px;
+}
+.labelSlider .labelSlider-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 32px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 100%;
+  border: 0;
+}
+.labelSlider .labelSlider-slider::-webkit-slider-thumb {
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+  background: #eeeeee;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 0px;
+}
+.labelSlider .labelSlider-slider::-moz-range-track {
+  width: 100%;
+  height: 32px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 100%;
+  border: 0;
+}
+.labelSlider .labelSlider-slider::-moz-range-thumb {
+  border: 0;
+  height: 32px;
+  width: 32px;
+  border-radius: 100%;
+  background: #eeeeee;
+  cursor: pointer;
+}
+.labelSlider .labelSlider-slider::-ms-track {
+  width: 100%;
+  height: 32px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.labelSlider .labelSlider-slider::-ms-thumb {
+  border: 0;
+  width: 32px;
+  border-radius: 100%;
+  background: #eeeeee;
+  cursor: pointer;
+  height: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */

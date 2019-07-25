@@ -1,0 +1,195 @@
+{
+  "program": {
+    "fileInfos": {
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0",
+        "signature": "1f753cee573dea40df8a9dc873fef5566957b19ad513874f6643d8dfb14842d0"
+      },
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.d.ts": {
+        "version": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96",
+        "signature": "7994d44005046d1413ea31d046577cdda33b8b2470f30281fd9c8b3c99fe2d96"
+      },
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4",
+        "signature": "973df4e41aea3780ce77073777d37dd5896f684124f4c42409f3a832133837a4"
+      },
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52",
+        "signature": "2a0390a665763bcc90f0670e43c587928d8fefe2a94a11209c1e22cba7b09f52"
+      },
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+        "version": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0",
+        "signature": "dd94d8ef48c562389eb58af8df3a3a34d11367f7c818192aa5f16470d469e3f0"
+      },
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+        "version": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3",
+        "signature": "828413486bdcaa342558e8e4570b1b287b776cb61b4b70b0214bd10c5d9a94c3"
+      },
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+        "version": "6c9f73334f8bf47aea685ca5b46a8f7e992a223e96fbceb030f26a4d2324ba21",
+        "signature": "6c9f73334f8bf47aea685ca5b46a8f7e992a223e96fbceb030f26a4d2324ba21"
+      },
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+        "version": "e6b8ff2798f8ebd7a1c7afd8671f2cb67ee1901c422f5964d74b0b34c6574ea2",
+        "signature": "e6b8ff2798f8ebd7a1c7afd8671f2cb67ee1901c422f5964d74b0b34c6574ea2"
+      },
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+        "version": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe",
+        "signature": "5e72f949a89717db444e3bd9433468890068bb21a5638d8ab15a1359e05e54fe"
+      },
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+        "version": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976",
+        "signature": "f5b242136ae9bfb1cc99a5971cccc44e99947ae6b5ef6fd8aa54b5ade553b976"
+      },
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+        "version": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230",
+        "signature": "9ae2860252d6b5f16e2026d8a2c2069db7b2a3295e98b6031d01337b96437230"
+      },
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+        "version": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303",
+        "signature": "3e0a459888f32b42138d5a39f706ff2d55d500ab1031e0988b5568b0f67c2303"
+      },
+      "d:/git/pokepicker/src/util.ts": {
+        "version": "c9dccab61da7092d7acae86ce0a87d892139cf7b310cd67df6daab74df8a55fe",
+        "signature": "97ba9acf6f830b23f602b5f7355a2aedd068ed7dfe9392bbb31f7b59a203ab94"
+      },
+      "d:/git/pokepicker/src/storage.ts": {
+        "version": "85dce8eb379fffc0b2d4324e964ee9381e1c2954b3fbeaa9681dc208a90edae9",
+        "signature": "566d146dfaf495a99ce75a8cef1aab42f11f26e7173fcfe13b6840124d5a6879"
+      },
+      "d:/git/pokepicker/src/pokemon.ts": {
+        "version": "0d81643bcd82a2bc7951ce110ff8c2f309e39769c4732885b4d321465a518a66",
+        "signature": "0124c060dee62808b07c91a5f346f0927c1d5a8a353ecdf6cff325da07bd2f9b"
+      },
+      "d:/git/pokepicker/src/eventclass.ts": {
+        "version": "a8882dde9922835a36ae99553e7be88d010ebd250030f5d9360280110e29748c",
+        "signature": "ce9c60e9f20ed1efad6a74a771a6f6d217a227f70c590dbbda4506dafa261154"
+      },
+      "d:/git/pokepicker/src/widget.ts": {
+        "version": "a5a27e2b24ff1751b015ce93d61b903d49688dd8126eaba3ed69f01b444909c3",
+        "signature": "26f499697a627d750482736cff581f6038ec35c1ef7f828ec5315639acf0db62"
+      },
+      "d:/git/pokepicker/src/pokebutton.ts": {
+        "version": "e190cd004208cf56f094af9491b7027a4ee1d36bdce6de4decfd44871fbea99b",
+        "signature": "3e12c2148f4584bc2b3ab25ad9ce8317c2facf5b74415c4aeb4715cbbc925b8c"
+      },
+      "d:/git/pokepicker/src/pokebuttoncollection.ts": {
+        "version": "7ee75fc3cc97282a66df5ada3fd55d6b67f90e52b06261862934174c4e583426",
+        "signature": "3875dd5cf96afa5a58955f701c174664297444d11950fccf055b35c625f69868"
+      },
+      "d:/git/pokepicker/src/resultcollection.ts": {
+        "version": "f0803bb79a12920a58c8676846e5a81a36a201a2c588a743bf57cf3f587ddca0",
+        "signature": "946db620df204a71e99eef48b6ce1f7c8219ff721f5c1304f10781b2eb96cef1"
+      },
+      "d:/git/pokepicker/src/labeledslider.ts": {
+        "version": "f2e5d55824db2ad067cb44ab1316682b395cca7406cb8ca379ac108e481a5809",
+        "signature": "51b0116b8739210914c43dc42be7113fd47e34aa0f65fe0b7f90d3e23c5f15e6"
+      },
+      "d:/git/pokepicker/src/entry.ts": {
+        "version": "b45cbfe0f16c7f01778d746ab69b3f24b206de1ae9c20fe4e793116f7d1747d7",
+        "signature": "6455824f7e57e992236964a48399c82c21daf1df8f69108c9f5564c97f8d66f4"
+      }
+    },
+    "options": {
+      "composite": true,
+      "declaration": true,
+      "declarationMap": true,
+      "outDir": "D:/Git/pokepicker/dist",
+      "module": 2,
+      "target": 1,
+      "strict": false,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "lib": [
+        "lib.es2015.d.ts",
+        "lib.dom.d.ts"
+      ],
+      "rootDir": "D:/Git/pokepicker/src",
+      "watch": true,
+      "configFilePath": "D:/Git/pokepicker/tsconfig.json"
+    },
+    "referencedMap": {
+      "d:/git/pokepicker/src/pokemon.ts": [
+        "d:/git/pokepicker/src/storage.ts",
+        "d:/git/pokepicker/src/util.ts"
+      ],
+      "d:/git/pokepicker/src/eventclass.ts": [
+        "d:/git/pokepicker/src/util.ts"
+      ],
+      "d:/git/pokepicker/src/widget.ts": [
+        "d:/git/pokepicker/src/util.ts",
+        "d:/git/pokepicker/src/eventclass.ts"
+      ],
+      "d:/git/pokepicker/src/pokebutton.ts": [
+        "d:/git/pokepicker/src/util.ts",
+        "d:/git/pokepicker/src/widget.ts",
+        "d:/git/pokepicker/src/pokemon.ts"
+      ],
+      "d:/git/pokepicker/src/pokebuttoncollection.ts": [
+        "d:/git/pokepicker/src/pokemon.ts",
+        "d:/git/pokepicker/src/pokebutton.ts",
+        "d:/git/pokepicker/src/widget.ts",
+        "d:/git/pokepicker/src/util.ts"
+      ],
+      "d:/git/pokepicker/src/resultcollection.ts": [
+        "d:/git/pokepicker/src/widget.ts",
+        "d:/git/pokepicker/src/util.ts",
+        "d:/git/pokepicker/src/pokebutton.ts",
+        "d:/git/pokepicker/src/pokemon.ts"
+      ],
+      "d:/git/pokepicker/src/labeledslider.ts": [
+        "d:/git/pokepicker/src/widget.ts",
+        "d:/git/pokepicker/src/util.ts"
+      ],
+      "d:/git/pokepicker/src/entry.ts": [
+        "d:/git/pokepicker/src/util.ts",
+        "d:/git/pokepicker/src/pokemon.ts",
+        "d:/git/pokepicker/src/pokebutton.ts",
+        "d:/git/pokepicker/src/pokebuttoncollection.ts",
+        "d:/git/pokepicker/src/resultcollection.ts",
+        "d:/git/pokepicker/src/labeledslider.ts"
+      ]
+    },
+    "exportedModulesMap": {
+      "d:/git/pokepicker/src/pokebutton.ts": [
+        "d:/git/pokepicker/src/pokemon.ts",
+        "d:/git/pokepicker/src/widget.ts"
+      ],
+      "d:/git/pokepicker/src/pokebuttoncollection.ts": [
+        "d:/git/pokepicker/src/widget.ts"
+      ],
+      "d:/git/pokepicker/src/resultcollection.ts": [
+        "d:/git/pokepicker/src/widget.ts"
+      ],
+      "d:/git/pokepicker/src/labeledslider.ts": [
+        "d:/git/pokepicker/src/widget.ts"
+      ]
+    },
+    "semanticDiagnosticsPerFile": [
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es5.d.ts",
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.d.ts",
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.dom.d.ts",
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "d:/git/pokepicker/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "d:/git/pokepicker/src/util.ts",
+      "d:/git/pokepicker/src/storage.ts",
+      "d:/git/pokepicker/src/pokemon.ts",
+      "d:/git/pokepicker/src/eventclass.ts",
+      "d:/git/pokepicker/src/widget.ts",
+      "d:/git/pokepicker/src/pokebutton.ts",
+      "d:/git/pokepicker/src/pokebuttoncollection.ts",
+      "d:/git/pokepicker/src/resultcollection.ts",
+      "d:/git/pokepicker/src/labeledslider.ts",
+      "d:/git/pokepicker/src/entry.ts"
+    ]
+  },
+  "version": "3.5.3"
+}

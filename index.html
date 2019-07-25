@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale:0.7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.png">
+    <title>title</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script data-main="dist/main" src="dist/require.js"></script>
+    <style id="pokeImageStyle">
+            .pokeButton img { width: 96px; height: 96px; }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="nav">
+            <div id="title">wats ur fav pokemon</div>
+            <div id="nav-btns">
+                <div id="nav-type">By Type</div>
+                <div id="nav-gen">By Gen</div>
+                <div id="nav-dex">Make ur own Dex</div>
+            </div>
+        </div>
+        <div id="welcome">
+            <div>hey,,, here's a lil website to pick ur favs ,,, ,,<br>uh.. ok..<br>um.. just click smth at the top...<br><br>by songsing</div>
+        </div>
+        <div id="main" style="display:none;">
+            <div id="zoom-container"></div>
+        </div>
+        <div id="results" style="display:none;">
+            <div id="share">
+                <div class="title">Share</div>
+                <div class="row"><span>Title:</span><input id="share-title" type="text" /></div>
+                <div class="row"><span>Link:</span><input id="share-url" type="text" readonly="true" /></div>
+            </div>
+        </div>
+        <div id="bottom" style="display:none;">
+            <div id="back">< Back</div>
+            <div id="info"><span id="count">0</span> selected &mdash; <span id="filter">Show just these</span> / <span id="unfilter">Show all</span></div>
+            <div id="next">Next ></div>
+        </div>
+    </div>
+</body>
+</html>

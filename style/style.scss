@@ -1,0 +1,451 @@
+img
+{
+}
+
+body, html, #container
+{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+$topHeight: 96px;
+$bottomHeight: 64px;
+
+#nav
+{
+    width: 100%;
+    height: $topHeight;
+    background: #111;
+    box-sizing: border-box;
+    padding: 0 32px;
+    color: #eee;
+
+    #title
+    {
+        float: left;
+        height: $topHeight;
+        line-height: $topHeight;
+        font-size: 32px;
+    }
+
+    #nav-btns
+    {
+        float: right;
+        height: $topHeight;
+        line-height: $topHeight;
+        font-size: 18px;
+
+        div
+        {
+            float: left;
+            margin: 0 0px;
+            padding: 0 12px;
+            cursor: pointer;
+            box-sizing: border-box;
+            height: 100%;
+
+            &:hover, &.selected
+            {
+                border-bottom: 2px solid yellow;
+                color: yellow;
+            }
+        }
+    }
+}
+
+#main
+{
+    height: calc(100% - #{$topHeight} - #{$bottomHeight});
+    width: 100%;
+    background: #eee;
+    color: #111;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    overflow: auto;
+    text-align: center;
+    padding-bottom: 64px;
+}
+
+#welcome
+{
+    height: calc(100% - #{$topHeight});
+    width: 100%;
+    background: #eee;
+    color: #111;
+    box-sizing: border-box;
+    padding: 64px 0px;
+    overflow: auto;
+    font-size: 64px;
+    text-align: center;
+
+    div
+    {
+        width: 50%;
+        display: inline-block;
+    }
+}
+
+#bottom
+{
+    position: relative;
+    width: 100%;
+    height: $bottomHeight;
+    background: #111;
+    box-sizing: border-box;
+    padding: 0;
+    color: #eee;
+    text-align: center;
+
+    #filter, #unfilter
+    {
+        cursor: pointer;
+        text-decoration: underline;
+
+        &:hover
+        {
+            color: #ddd;
+        }
+    }
+
+    div
+    {
+        height: $bottomHeight;
+        line-height: $bottomHeight;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    #next, #back
+    {
+        font-weight: bold;
+        font-size: 24px;
+        cursor: pointer;
+        padding: 0 32px;
+
+        &:hover
+        {
+            background: #333;
+        }
+    }
+
+    #back
+    {
+        position: absolute;
+        left: 0;
+    }
+
+    #next
+    {
+        position: absolute;
+        right: 0;
+    }
+}
+
+.pokeButton
+{
+    border: 1px solid #aaa;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin: 8px;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
+
+    &.selected
+    {
+        background-color: #FFFFAA;
+
+        &:hover
+        {
+            background-color: #FFFFCC;
+        }
+    }
+
+    img
+    {
+        pointer-events: none;
+        object-fit: contain;
+    }
+
+    div
+    {
+        color: #333;
+    }
+
+    &:hover
+    {
+        background: rgba(255,255,255,0.4);
+    }
+}
+
+#results
+{
+    height: calc(100% - #{$topHeight});
+    width: 100%;
+    background: #eee;
+    color: #111;
+    box-sizing: border-box;
+    padding: 32px 32px;
+    overflow: auto;
+    text-align: center;
+
+    & > div
+    {
+        text-align: center;
+        border: 4px solid #444;
+        border-radius: 5px;
+        padding: 24px 32px;
+        background-color: #ddd;
+        max-width: 100%;
+        display: inline-block;
+        min-width: 50%;
+
+        &#share
+        {
+            display: block;
+        }
+
+        .title
+        {
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+
+        .section
+        {
+            display: inline-block;
+            padding: 8px 8px;
+            background-color: #ccc;
+            border-radius: 10px;
+            
+            .pokeButton
+            {
+                margin: 4px;
+                border: 0;
+                padding: 0;
+                cursor: default;
+
+                &:hover
+                {
+                    background: transparent;
+                }
+
+                &.selected
+                {
+                    background: transparent;
+                }
+            }            
+
+            margin-bottom: 16px;
+
+            &:last-of-type
+            {
+                margin-bottom: 0;
+            }
+        }
+
+        &#share
+        {
+            margin-top: 8px;
+
+            .title
+            {
+                font-size: 32px;
+            }
+
+            .row
+            {
+                margin: 8px 0;
+                span
+                {
+                    font-size: 24px;
+                    margin-right: 1em;
+                }
+
+                input
+                {
+                    font-size: 24px;
+                    display: block;
+                    width: 100%;
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px)
+{
+    #nav
+    {
+        height: $topHeight * 1.5;
+
+        #title, #nav-btns
+        {
+            width: 100%;
+            height: $topHeight * 0.75;
+            line-height: $topHeight * 0.75;
+            display: block;
+            text-align: center;
+
+            div
+            {
+                float: none;
+                display: inline-block;
+            }
+        }
+    }
+
+    #main > #zoom-container
+    {
+        bottom: $bottomHeight * 1.5 + 16px;
+    }
+
+    #bottom
+    {
+        height: $bottomHeight * 1.5;
+
+        div
+        {
+            display: block;
+            height: $bottomHeight * 0.75;
+            line-height: $bottomHeight * 0.75;
+            width: 100%;
+        }
+
+        #next, #back
+        {
+            display: inline-block;
+            width: auto;
+            bottom: 0;
+        }
+    }
+
+    #welcome
+    {
+        height: calc(100% - #{$topHeight * 1.5});
+    }
+
+    #main
+    {
+        height: calc(100% - #{$topHeight * 1.5} - #{$bottomHeight * 1.5});
+    }
+}
+
+#zoom-container
+{
+    position: fixed;
+    right: 32px;
+    bottom: $bottomHeight + 16px;
+    width: 20%;
+    min-width: 150px;
+    background: #444;
+    border-radius: 60px;
+    height: 32px;
+    border: 4px solid #888;
+    opacity: 0.8;
+
+    &:hover
+    {
+        opacity: 1;
+    }
+}
+
+.labelSlider
+{
+    position: relative;
+
+    .labelSlider-label
+    {
+        width: 100%;
+        height: 100%;
+        line-height: 32px;
+        color: #ddd;
+        font-size: 20px;
+    }
+
+    .labelSlider-slider
+    {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 0;
+        -webkit-appearance: none;
+        width: 100%;
+        height: 32px;
+        margin: 0;
+        box-sizing: border-box;
+        border: 0;
+        background: transparent;
+        margin: 0px;
+
+        &:focus
+        {
+            //outline: none;
+        }
+
+        &::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 32px;
+            cursor: pointer;
+            background: transparent;
+            border-radius: 100%;
+            border: 0;
+        }
+
+        &::-webkit-slider-thumb {
+            height: 32px;
+            width: 32px;
+            border-radius: 100%;
+            background: #eeeeee;
+            cursor: pointer;
+            -webkit-appearance: none;
+            margin-top: 0px;
+        }
+
+        &::-moz-range-track {
+            width: 100%;
+            height: 32px;
+            cursor: pointer;
+            background: transparent;
+            border-radius: 100%;
+            border: 0;
+        }
+
+        &::-moz-range-thumb {
+            border: 0;
+            height: 32px;
+            width: 32px;
+            border-radius: 100%;
+            background: #eeeeee;
+            cursor: pointer;
+        }
+
+        &::-ms-track {
+            width: 100%;
+            height: 32px;
+            cursor: pointer;
+            background: transparent;
+            border-color: transparent;
+            color: transparent;
+        }
+
+        &::-ms-thumb {
+            border: 0;
+            width: 32px;
+            border-radius: 100%;
+            background: #eeeeee;
+            cursor: pointer;
+            height: 32px;
+        }
+          
+    }
+}
